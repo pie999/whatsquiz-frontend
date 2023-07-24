@@ -8,12 +8,20 @@ function Reveal({ lobby }) {
 
   return (
     <>
-      <h1>
-        {lobby.message.author}: {lobby.message.text}
-      </h1>
+      <div className="message-div">
+        <p className="message-author">{lobby.message.author}</p>
+        <p className="message-text">{lobby.message.text}</p>
+        <p className="message-date">{lobby.message.date}</p>
+      </div>
+      <h2 className="risultati">RISULTATI</h2>
       {lobby.users.map((u, i) => {
         return (
-          <p key={i}>
+          <p
+            key={i}
+            className={`user-answer ${
+              u.answer === lobby.message.author ? "correct-answer" : ""
+            }`}
+          >
             {u.name}: {u.answer}
           </p>
         );

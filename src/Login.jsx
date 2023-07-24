@@ -29,9 +29,8 @@ function Login() {
         <i>il primo quiz sulle chat di whatsapp (forse)</i>
       </p>
       <p className="sub-sub-title">
-        v 0.1 by <a href="https://github.com/pie999">pie999</a>
+        v 1.0 by <a href="https://github.com/pie999">pie999</a>
       </p>
-      <img src="images/salvini-ride.png" alt="salvini ride" />
       <form className="name-form" onSubmit={(e) => handleSubmit(e)}>
         <label htmlFor="username">NICKNAME</label>
         <input

@@ -29,13 +29,42 @@ function Answer({ lobby }) {
   return (
     <div className="answer-div">
       <p className="time">{Math.round(time / 1000)}</p>
-      <h1 className="answer-prompt">{lobby.message.text}</h1>
+      <div className="message-div">
+        <p className="message-text">{lobby.message.text}</p>
+        <p className="message-date">{lobby.message.date}</p>
+      </div>
+      <h2 className="chi">chi la detto?</h2>
       <div className="authors-list">
-        <button onClick={() => setAnswer("Pietro")}>Pietro</button>
-        <button onClick={() => setAnswer("Riccardo")}>Riccardo</button>
-        <button onClick={() => setAnswer("Pezz")}>Pezz</button>
-        <button onClick={() => setAnswer("Carmine")}>Carmine</button>
-        <button onClick={() => setAnswer("Farina")}>Farina</button>
+        <button
+          onClick={() => setAnswer("Pietro")}
+          className={answer === "Pietro" ? "selected-answer" : ""}
+        >
+          Pietro
+        </button>
+        <button
+          onClick={() => setAnswer("Riccardo")}
+          className={answer === "Riccardo" ? "selected-answer" : ""}
+        >
+          Riccardo
+        </button>
+        <button
+          onClick={() => setAnswer("Pezz")}
+          className={answer === "Pezz" ? "selected-answer" : ""}
+        >
+          Pezz
+        </button>
+        <button
+          onClick={() => setAnswer("Carmine")}
+          className={answer === "Carmine" ? "selected-answer" : ""}
+        >
+          Carmine
+        </button>
+        <button
+          onClick={() => setAnswer("Farina")}
+          className={answer === "Farina" ? "selected-answer" : ""}
+        >
+          Farina
+        </button>
       </div>
     </div>
   );

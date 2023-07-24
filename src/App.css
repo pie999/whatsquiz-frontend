@@ -225,57 +225,70 @@ input#lobby {
 
 /* ANSWER */
 
-.answer-prompt {
-  text-align: center;
-}
-
-.answer-area {
-  resize: none;
-  width: clamp(300px, 60%, 500px);
-  margin: auto;
-  display: block;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid var(--prussian-blue);
-  border-radius: 10px;
-  background-color: rgb(202, 223, 255);
-  padding: 5px;
-}
-
-/* RATE */
-
-.rate-div h1 {
-  text-align: center;
-}
-
-.user-answer {
-  display: block;
+.message-div {
   margin: 10px auto;
-  padding: 2px 5px;
+  background-color: white;
+  width: fit-content;
+  padding: 13px 25px;
+  border-radius: 0px 13px 13px 13px;
+}
+
+.message-text {
+  font-size: 25px;
+  margin: 0%;
+}
+
+.message-date {
+  margin: 3px 0 0 0;
+  color: rgb(88, 88, 88);
+}
+
+.chi {
+  text-align: center;
+}
+
+.authors-list button {
+  display: block;
   font-size: 20px;
-  border-radius: 10px;
-  background-color: rgb(230, 230, 230);
-  border: 2px solid var(--prussian-blue);
+  margin: 10px auto;
+  border-radius: 5px;
 }
 
 .selected-answer {
-  background-color: #b5ffc2;
+  background-color: #94ffa2;
   border-color: green;
 }
 
 /* REVEAL */
 
-.answer-reveal {
-  margin-bottom: 25px;
+.message-author {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(43, 43, 240);
 }
 
-.answer-reveal h2 {
+.risultati {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 0px 15px;
+}
+
+.user-answer {
   font-size: 20px;
-  margin-bottom: 7px;
+  margin: 10px;
+  text-align: center;
 }
 
-.answer-reveal p {
-  margin-top: 0;
+.correct-answer {
+  color: #006d0f;
+}
+
+.next-round-but {
+  display: block;
+  margin: 40px auto;
+  font-size: 17px;
+  padding: 5px 10px;
 }
 
 /* OVER */
