@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { socket } from "../socket";
 
-const timeSeconds = 4;
+const timeSeconds = 8;
 
 function Answer({ lobby }) {
   const [answer, setAnswer] = useState("");
